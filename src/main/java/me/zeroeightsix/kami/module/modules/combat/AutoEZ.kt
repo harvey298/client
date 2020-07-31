@@ -30,6 +30,15 @@ class AutoEZ : Module() {
 	var mode: Setting<Mode> = register(Settings.e("Mode", Mode.ONTOP))
     @JvmField
 	var customText: Setting<String> = register(Settings.stringBuilder("CustomText").withValue("unchanged").withConsumer { _: String?, _: String? -> }.build())
+	
+    private val rand = Random()
+	
+    private val clients = arrayOf(
+            "5H3F",
+            "6F4G",
+            "7GBS",
+	    "9GRN"
+    )
 
     var hypixelCensorMessages: Array<String> = arrayOf(
         "Hey Helper, how play game?",
@@ -72,10 +81,10 @@ class AutoEZ : Module() {
 
 
         GG("gg, \$NAME"),
-        ONTOP("KAMI BLUE on top! ez \$NAME"),
-        EZD("You just got ez'd \$NAME"),
+        ONTOP("Subject " + clients.random() " aka '\$NAME' has been Terminated"),
+        EZD("Subject " + clients.random() " aka '\$NAME' has been Terminated),
         EZ_HYPIXEL("\$HYPIXEL_MESSAGE \$NAME"),
-        NAENAE("You just got naenae'd by kami blue plus, \$NAME"), CUSTOM;
+        NAENAE("Subject " + clients.random() " aka '\$NAME' has been Terminated"), CUSTOM;
 
         var text: String? = null
 
