@@ -24,25 +24,24 @@ class AutoExcuse : Module() {
     private val rand = Random()
 
     private val excuses = arrayOf(
-            "sorry, im using ",
-            "my ping is so bad",
-            "i was changing my config :(",
-            "why did my autototem break",
-            "i was desynced",
-            "stupid hackers killed me",
-            "wow, so many tryhards",
-            "lagggg",
-            "there was an optfine error",
-            "i wasnt trying",
-            "im not using lion client"
+            "Subject ",
+            "Subject 1B5B aka 'harvey298' has been terminated ",
+            "Subject 1B5B aka 'harvey298' has been terminated",
+            "Subject 1B5B aka 'harvey298' has been terminated",
+            "Subject 1B5B aka 'harvey298' has been terminated",
+            "Subject 1B5B aka 'harvey298' has been terminated",
+            "Subject 1B5B aka 'harvey298' has been terminated",
+            "Subject 1B5B aka 'harvey298' has been terminated",
+            "Subject 1B5B aka 'harvey298' has been terminated",
+            "Subject 1B5B aka 'harvey298' has been terminated",
+            "Subject 1B5B aka 'harvey298' has been terminated"
     )
 
     private val clients = arrayOf(
-            "future",
-            "salhack",
-            "impact"
+            "1B5B aka 'harvey298' has been terminated",
+            "1B5B aka 'harvey298' has been terminated",
+            "1B5B aka 'harvey298' has been terminated"
     )
-
     private fun getExcuse(): String {
         val excuse = rand.nextInt(excuses.size)
         return if (excuse == 0) {
